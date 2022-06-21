@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* Variáveis */
+:root {
+	--fundo: #ebebeb;
+	--fundo-escuro: #d5d3d3;
+	--verde: #3B5249;
+	--verde-claro: #366754;
+	--verde-escuro: #374D44;
+	--verde-hover: #2E3E38;
+}
+
+/*========== Padronização do Site ================================================================*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--fundo);
+	height: 100%;
+}
+
+/* ==============================================================================================*/
+
+/*========== Estilização da 	Barra de Navegação ================================================ */
+#cabecalho-inicial {
+	position: sticky;
+	z-index: 5;
+	top: 0;
+	width: 100%;
+	height: 80px;
+
+	background-color: var(--verde);
+	display: flex;
+	align-items: center;
+	/* display: none; */
+}
+
+.nav-bar {
+	width: 90%;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Estilização da logo PETFINDER */
+
+.wrapper-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	cursor: pointer;
+}
+
+.logo {
+	text-decoration: none;
+	font-size: 25px;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 2px;
+	color: var(--fundo);
+}
+
+.nav-bar img {
+	width: 50px;
+	height: auto;
+}
+
+/* Estilização dos Links */
+.nav-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+}
+
+/* Lista Esquerda */
+.nav-list-left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	list-style: none;
+}
+
+.nav-list-left a {
+	padding: 4px;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 1px;
+	color: var(--fundo);
+	transition: all .2s;
+}
+
+.nav-list-left a:hover {
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.nav-list-left .a-open {
+	padding: 4px;
+	border: 1px solid var(--fundo);
+	border-radius: 5px;
+	text-decoration: none !important;
+}
+
+.nav-list-left .a-open:hover {
+	transition: all .2s;
+	background-color: var(--fundo);
+	color: var(--verde);
+	font-weight: bold;
+}
+
+/* Lista Direita */
+.login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+/* ESTILIZAÇÃO DA PARTE DE LOGIN NA NAVBAR */
+#icon {
+	font-size: 30px;
+	color: var(--fundo);
+	padding-left: 18px;
+	border-left: 1px solid var(--fundo);
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.text .p {
+	font-size: 13.3px;
+}
+
+.text p {
+	font-family: 'Poppins';
+	font-size: 13px;
+	line-height: 15px;
+	color: var(--fundo);
+}
+
+.text p span {
+	text-decoration: none;
+	color: var(--fundo);
+	font-weight: bold;
+}
+
+/* ===============================================================================================*/
+
+/*========== Banner ==============================================================================*/
+.banner-area {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	background-image: url(../assets/image/banner.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 380px;
+	top: 80px;
+}
+
+.banner-area h2 {
+	font-size: 60px;
+	font-family: 'Poppins';
+	color: var(--fundo);
+	/* padding-top: 10%; */
+}
+
+/*================================================================================================*/
+
+/*========== Conteúdo Principal do Site ==========================================================*/
+.content-area {
+	position: relative;
+	top: 0px;
+	z-index: 4;
+
+
+	width: 100%;
+	background: var(--fundo);
+}
+
+/*================================================================================================*/
+
+/*========== Footer =============================================================================*/
+.footer {
+	position: relative;
+	top: 0px;
+	z-index: 3;
+	font-family: 'Poppins';
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.footer-one {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--verde);
+	color: var(--fundo);
+	width: 100%;
+	height: 250px;
+}
+
+.footer-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-logo {
+	font-size: 32px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	margin-bottom: 25px;
+}
+
+.footer-section p {
+	font-size: 14px;
+	line-height: 25px;
+}
+
+/* Footer de baixo */
+.footer-two {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 70px;
+	font-family: 'Poppins';
+	font-size: 13px;
+	background-color: var(--verde-escuro);
+	color: var(--fundo);
+}
+
+.footer-min-logo {
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.footer-name-group {
+	color: #92aba2;
+}
+
+/* Redes sociais footer */
+.footer-socials {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-socials li {
+	margin: 40px 7px 0;
+}
+
+.footer-socials a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.footer-socials a i {
+	font-size: 1.1rem;
+	transition: color .0, 8s ease;
+}
+
+.footer-socials a:hover {
+	color: rgb(161, 168, 166)
+}
+
+/*================================================================================================*/
+
+/*========= Estilização do Modal =================================================================*/
+.modal-box {
+	display: none;
+	position: fixed;
+	background-color: rgba(0, 0, 0, .4);
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	z-index: 15;
+}
+
+/* SCRIPT */
+.modal-box.open {
+	display: block;
+}
+
+/* MODAL ANIMATION OPEN */
+@keyframes modal {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 60px, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+/* Modal */
+.modal {
+	position: relative;
+	background: var(--fundo);
+	width: 205px;
+	height: 250px;
+	top: 80px;
+	left: 1029px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 2px 10px 5px rgba(235, 235, 235, 0.1);
+	animation: modal .3s;
+}
+
+/* Setinha do Modal */
+.modal-bloco {
+	position: absolute;
+	background-color: var(--fundo);
+	border-radius: 1px;
+	width: 20px;
+	height: 20px;
+	left: 161px;
+	top: -8px;
+	transform: rotate(45deg);
+}
+
+/* Modal Texto */
+.modal-text {
+	width: 150px;
+	font-family: 'Poppins';
+	line-height: 16px;
+	font-size: 14px;
+}
+
+/* Modal Links */
+.modal-link-one {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--verde);
+	color: var(--fundo);
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+	margin-top: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: 'Poppins';
+	text-decoration: none;
+}
+
+.modal-link-one:hover {
+	transition: all .2s;
+	background-color: rgba(55, 77, 68, 0.9);
+}
+
+.modal-link-two {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--fundo);
+	color: var(--verde);
+	width: 100%;
+	height: 40px;
+	border: 2px solid var(--verde);
+	border-radius: 5px;
+	margin-top: 6px;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: 'Poppins';
+	text-decoration: none;
+}
+
+.modal-link-two:hover {
+	transition: all .2s;
+	color: rgba(55, 77, 68, 0.8);
+}
+
+/* Modal Logo */
+.modal-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Poppins';
+	font-weight: 300;
+	width: 100%;
+	margin-top: 20px;
+	letter-spacing: 1px;
+}
+
+/*================================================================================================*/
+
+/*======== Estilização da Scrollbar ==============================================================*/
+::-webkit-scrollbar-track {
+	background-color: #f4f4f4;
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+	background: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #2e3e38;
+}
+
+/*================================================================================================*/

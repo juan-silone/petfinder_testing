@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - PETFINDER</title>
+  <link rel="stylesheet" href="./src/styles/style.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="./src/assets/image/logo.png">
+
+</head>
+
+<body>
+  <!-- NAVBAR DO SITE-->
+  <header id="cabecalho-inicial">
+    <div class="nav-bar">
+      <div class="wrapper-logo">
+        <img src="src/assets/image/logo-branca.png">
+        <a href="index.html" class="logo">PETFINDER</a>
+      </div>
+      <nav class="nav-links">
+        <ul class="nav-list-left">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="./src/Components/Sobre/sobre.html">Sobre</a></li>
+          <li><a href="./src/Components/Contato/duvidas.html">Contato</a></li>
+          <li><a href="./src/Components/RegistroPet/registro-pet.html" class="a-open">Cadastre seu PET</a></li>
+        </ul>
+
+        <!-- TESTES sistema de Cadastro-->
+        <div class="login" style="cursor: pointer;">
+          <i class="fa-regular fa-circle-user" id="icon"></i>
+          <div class="text">
+            <p>olá, faça seu <span>login</span></p>
+            <p class="p">ou <span>cadastra-se</span> <i class="fa-solid fa-angle-down"></i></p>
+          </div>
+        </div>
+        <!-- =====  -->
+      </nav>
+    </div>
+  </header>
+  
+  <!-- BANNER DO SITE-->
+  <section class="banner-area">
+    <h2>Encontre o seu pet!</h2>
+  </section>
+
+  <!-- CONTEÚDO DO SITE -->
+  <main class="content-area">
+    <!-- Faixa do Content Area -->
+    <div class="faixa">
+      <img src="./src/assets/image/logo-branca.png" alt="logo-petfinder">
+      <h2>Saiba mais sobre o nosso trabalho</h2>
+      <p>nos acompanhando nas <a href="#socials">redes sociais</a></p>
+    </div>
+
+    <div id="t1">
+
+    </div>
+    <!-- CARDS -->
+  </main>
+
+  <!-- RODAPÉ DO SITE -->
+  <footer class="footer">
+    <div class="footer-one">
+      <section class="footer-section">
+        <h2 class="footer-logo">PETFINDER</h2>
+        <p>Nosso trabalho é te ajudar a encontrar o seu pet!</p>
+        <p>Deixe seu feedback ou tire suas duvidas nas redes sociais.</p>
+      </section>
+      <ul class="footer-socials" id="socials">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-two">
+      <p>copyright &copy;2022 <span class="footer-min-logo">PETFINDER</span>. designed by <span
+          class="footer-name-group"> JMPG's Group. </span></p>
+    </div>
+  </footer>
+
+  <!-- Modal box -->
+  <div id="modal-login" class="modal-box">
+    <!-- Modal interface -->
+    <div class="modal">
+      <div class="modal-bloco"></div>
+      <p class="modal-text">Bem-Vindo, acesse sua conta ou cadastra-se :)</p>
+      <a href="./src/Components/Login/login.html" class="modal-link-one">entrar</a>
+      <a href="./src/Components/Cadastro/cadastro.html" class="modal-link-two">cadastrar</a>
+      <p class="modal-logo">PETFINDER</p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="src/scripts/modal.js"></script>
+  <script src="https://kit.fontawesome.com/629a7b671b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

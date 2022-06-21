@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de pet - PETFINDER</title>
+  <link rel="stylesheet" href="registro-pet.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="../../assets/image/logo.png">
+
+</head>
+
+
+
+<body>
+  <!-- NAVBAR DO SITE-->
+  <header id="cabecalho-inicial">
+    <div class="nav-bar">
+      <div class="wrapper-logo">
+        <img src="../../assets/image/logo-branca.png">
+        <a href="../../../index.html" class="logo">PETFINDER</a>
+      </div>
+      <nav class="nav-links">
+        <ul class="nav-list-left">
+          <li><a href="../../../index.html">Início</a></li>
+          <li><a href="../Sobre/sobre.html">Sobre</a></li>
+          <li><a href="../Contato/duvidas.html">Contato</a></li>
+          <li><a href="./registro-pet.html" class="a-open">Cadastre seu PET</a></li>
+        </ul>
+
+        <!-- TESTES sistema de Cadastro-->
+        <div class="login" style="cursor: pointer;">
+          <i class="fa-regular fa-circle-user" id="icon"></i>
+          <div class="text">
+            <p>olá, faça seu <span>login</span></p>
+            <p class="p">ou <span>cadastra-se</span> <i class="fa-solid fa-angle-down"></i></p>
+          </div>
+        </div>
+        <!-- =====  -->
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="content-area">
+
+    <section class="content">
+      <form class="form">
+        <h1>Cadastre o seu Pet</h1>
+        <!-- #begin: input-region -->
+        <section class="form-input">
+          <div class="form-input-left">
+            <label for="animal-name">Nome do Animal</label>
+            <input type="text" id="animal-name" placeholder="Informe o nome do seu Pet">
+  
+            <label for="animal-color">Cor do Animal</label>
+            <input type="text" id="animal-color" placeholder="Informe a cor do seu Pet">
+  
+            <label for="animal-type">Selecione o seu Animal</label>
+            <select id="animal-type">
+              <option>Cachorro</option>
+              <option>Gato</option>
+              <option>Ave</option>
+              <option>Animal Silvestre - Especifique no Nome do Animal</option>
+            </select>
+            <div class="input-file-box">
+              <label>Envie a foto do seu Pet</label>
+              <label for="animal-photo" id="input-file">Arquivo</label>
+              <input type="file" id="animal-photo">
+            </div>
+          </div>
+
+          <div class="form-input-right">
+            <label for="animal-city">Cidade</label>
+            <input type="text" id="animal-city" placeholder="Informe sua cidade">
+  
+            <label for="animal-district">Bairro</label>
+            <input type="text" id="animal-district" placeholder="Informe seu bairro">
+  
+            <label for="reference-point">Ponto de Referência</label>
+            <input type="text" id="reference-point" placeholder="Informe um ponto de referência">
+  
+            <label for="animal-state">Selecione seu Estado</label>
+            <select id="animal-state">
+              <option>AC</option>
+              <option>AL</option>
+              <option>AP</option>
+              <option>AM</option>
+              <option>BA</option>
+              <option>CE</option>
+              <option>ES</option>
+              <option>GO</option>
+              <option>MA</option>
+              <option>MT</option>
+              <option>MS</option>
+              <option>MG</option>
+              <option>PA</option>
+              <option>PB</option>
+              <option>PR</option>
+              <option>PE</option>
+              <option>PI</option>
+              <option>RJ</option>
+              <option>RN</option>
+              <option>RS</option>
+              <option>RO</option>
+              <option>RR</option>
+              <option>SC</option>
+              <option>SP</option>
+              <option>SE</option>
+              <option>TO</option>
+              <option>DF</option>
+            </select>
+          </div>
+        </section>
+        <!-- #end: input-region -->
+        <button id="btn-submit">Cadastrar Pet</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ DO SITE -->
+  <footer class="footer">
+    <div class="footer-one">
+      <section class="footer-section">
+        <h2 class="footer-logo">PETFINDER</h2>
+        <p>Nosso trabalho é te ajudar a encontrar o seu pet!</p>
+        <p>Deixe seu feedback ou tire suas duvidas nas redes sociais.</p>
+      </section>
+      <ul class="footer-socials" id="socials">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-two">
+      <p>copyright &copy;2022 <span class="footer-min-logo">PETFINDER</span>. designed by <span
+          class="footer-name-group"> JMPG's Group. </span></p>
+    </div>
+  </footer>
+
+  <!-- Modal box -->
+  <div id="modal-login" class="modal-box">
+    <!-- Modal interface -->
+    <div class="modal">
+      <div class="modal-bloco"></div>
+      <p class="modal-text">Bem-Vindo, acesse sua conta ou cadastra-se :)</p>
+      <a href="../Login/login.html" class="modal-link-one">entrar</a>
+      <a href="../Cadastro/cadastro.html" class="modal-link-two">cadastrar</a>
+      <p class="modal-logo">PETFINDER</p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../../scripts/modal.js"></script>
+  <script src="https://kit.fontawesome.com/629a7b671b.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
